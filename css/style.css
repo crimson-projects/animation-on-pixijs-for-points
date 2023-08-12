@@ -1,0 +1,81 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #393B45;
+    font-family: neue-haas-grotesk-display, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-display: block;
+  }
+  
+  .stage {
+    display: flex;
+    flex-direction: column;
+    width: 716px;
+    height: 1008px;
+    background: #DAE0D2;
+    visibility: hidden;
+  }
+  
+  canvas {
+    opacity: 0.9;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    order: 1;
+    padding: 0 19px;
+  }
+  
+  .band {
+    font-size: 107px;
+    margin: 0;
+    letter-spacing: -0.5px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .band > div {
+    overflow: hidden;
+  }
+  
+  .details {
+    display: flex;
+    margin-top: 68px;
+    padding: 0px 6px;
+  }
+  .details p {
+    margin: 0;
+    line-height: 1.3;
+  }
+  .details p > div {
+    overflow: hidden;
+  }
+  .details span {
+    display: block;
+  }
+  
+  .date {
+    padding-right: 25px;
+  }
+  
+  .location {
+    padding-right: 65px;
+  }
